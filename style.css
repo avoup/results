@@ -32,14 +32,14 @@ div#navbar {
   margin-top: -20px;
 }
 
-div#navbar img {
+div#navbar #google img{
   position: absolute;
   top: 25px;
   left: 15px;
 }
 
 
-div#lupa img {
+div#navbar #google #lupa img {
   background-color: transparent;
   width: 20px;
   height: 20px;
@@ -51,7 +51,7 @@ div#navbar ul {
   list-style-type: none;
 }
 
-div#navbar li {
+div#navbar #left li {
   position: relative;
   display: inline;
   left: 120px;
@@ -77,17 +77,61 @@ div#navbar #active {
 }
 /* ------------------------copied stuff*/
 
-div#bell {
-
+div#navbar #right {
+  position: relative;
+  float: right;
+  top: -30px;
 }
+
 
  #bell:hover {
    background-color: black;
  }
 
- div#navbar #right {
+
+ #cubes {
+   line-height: 1px;
+   margin-right: 100px;
 
  }
+
+
+ #cubes div {
+   position: relative;
+   display: inline-block;
+   background-color: #666;
+   width: 4px;
+   height: 4px;
+   right: 10px;
+   margin: 1px;
+ }
+
+
+ #bell {
+   background-color: #666;
+   border-radius: 50px;
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   right: 65px;
+   top: 23px;
+ }
+
+ #bell img {
+   position: relative;
+   top: 2px;
+   left: 5px;
+ }
+  #bell:hover {
+    background-color: black;
+  }
+
+  #prof img {
+    position: relative;
+    height: 20px;
+    top: 25px;
+    left: 70px;
+  }
 
 
 
@@ -122,6 +166,7 @@ div#bell {
 
 /* -----------------------results stuff */
 
+
 div#results {
   left: 150px;
 }
@@ -132,11 +177,13 @@ div#results p:first-child {
   color: #666;
   top: 5px;
   left: 165px;
+
 }
 
 div#results p {
   position: relative;
   left:15px;
+  width: 650px;
 }
 
 div#vid {
@@ -218,7 +265,9 @@ div.texty p:nth-child(2) {
   color: green;
 }
 
-
+div#recommend {
+  height: 200px;
+}
 
 div#recommend p {
   position: relative;
@@ -229,13 +278,14 @@ div#recommend p {
   font-size: 15px;
   font-weight: 500;
   color: #1a0dab;
+
 }
 
 div#recommend h4 {
   position: relative;
   left: 170px;
   font-weight: normal;
-  padding: 0;
+  width: 650px;
 }
 
 div#recommend p:first-child {
@@ -248,7 +298,7 @@ div#recommend p:first-child {
 /* -----------------------footer stuff */
 
 div#footer {
-  position: fixed;
+  position: relative;
   width: 100%;
   height: 40px;
   bottom: 0;
@@ -258,20 +308,20 @@ div#footer {
 
 div#footer ul {
   list-style-type: none;
+  margin: 0;
 }
 
 div#footer li {
   position: relative;
   display: inline;
-  margin: 0 15px 5px 5px;
+  margin: 5px 15px 5px 5px;
   font-size: 13px;
   left: 125px;
-
+  top: 10px;
 }
 
 div#footer a {
   color: #666;
-
 }
 
 div#footer a:hover {
